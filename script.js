@@ -1,6 +1,5 @@
 function scrollDown() {
-    window.scrollTo({
-        top: window.innerHeight,
+    document.querySelector(".section").scrollIntoView({
         behavior: "smooth"
     });
 }
