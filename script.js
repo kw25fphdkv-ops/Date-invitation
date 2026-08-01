@@ -1,11 +1,14 @@
 function scrollDown() {
-    const nextSection = document.querySelector(".section");
+    const sections = document.querySelectorAll("section");
+    const current = window.scrollY;
 
-    if (nextSection) {
-        nextSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+    for (let i = 0; i < sections.length; i++) {
+        if (sections[i].offsetTop > current + 50) {
+            sections[i].scrollIntoView({
+                behavior: "smooth"
+            });
+            return;
+        }
     }
 }
 
