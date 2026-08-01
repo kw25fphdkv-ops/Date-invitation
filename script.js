@@ -1,6 +1,9 @@
 function scrollDown() {
-    document.querySelector(".section").scrollIntoView({
-        behavior: "smooth"
+    const next = document.querySelector(".section");
+
+    next.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
 }
 
@@ -13,9 +16,9 @@ function celebrate() {
     });
 
     setTimeout(() => {
-        alert("Dushi asinaaaa🤪
+    alert(`Dushi asinaaaa🤪
 
 See you at Sakura by Papagayo
-August 1 • 8:00 PM 🤎🍣");
+August 1 • 8:00 PM 🤎🍣`);
     }, 600);
 }
