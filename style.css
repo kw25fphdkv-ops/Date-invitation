@@ -63,9 +63,9 @@ background:#A47149;
 min-height:100vh;
 display:flex;
 flex-direction:column;
-justify-content:center;
+justify-content:flex-start;
 align-items:center;
-padding:40px 30px;
+padding:100px 40px 30px;
 text-align:center;
 }
 
