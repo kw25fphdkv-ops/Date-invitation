@@ -1,11 +1,16 @@
 function scrollDown(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-    });
+    const section = document.getElementById(id);
+
+    if (section) {
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
 }
 
 function celebrate() {
-    // Launch confetti
+
     if (typeof confetti === "function") {
         confetti({
             particleCount: 180,
@@ -14,15 +19,11 @@ function celebrate() {
         });
     }
 
-    // Show message
-    setTimeout(() => {
+    setTimeout(function () {
         alert(`Dushi asinaaaa🤪
 
-See you at Sakura by Papagayo 🍣🤎
-
-📅 Saturday, August 1
-🕗 8:00 PM
-
-Can't wait to make some beautiful memories together. 🌹`);
-    }, 500);
+See you at Sakura by Papagayo
+Saturday, August 1
+🕗 8:00 PM 🤎🍣`);
+    }, 600);
 }
