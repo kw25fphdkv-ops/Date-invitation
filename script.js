@@ -1,15 +1,7 @@
-function scrollDown() {
-    const sections = document.querySelectorAll("section");
-    const current = window.scrollY;
-
-    for (let i = 0; i < sections.length; i++) {
-        if (sections[i].offsetTop > current + 50) {
-            sections[i].scrollIntoView({
-                behavior: "smooth"
-            });
-            return;
-        }
-    }
+function scrollDown(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
 }
 
 function celebrate() {
