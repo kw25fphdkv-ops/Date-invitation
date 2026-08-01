@@ -14,6 +14,9 @@ function celebrate() {
     });
 
     setTimeout(() => {
-        alert("Looking forward to seeing you ❤️");
+        alert("Dushi asinaaaa🤪
+
+See you at Sakura by Papagayo
+August 1 • 8:00 PM 🤎🍣");
     }, 600);
 }
